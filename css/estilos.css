@@ -1,0 +1,55 @@
+
+
+
+.menu{
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif; color: beige;
+    font-size: 20px;
+}
+
+.menu ul{
+    list-style-type: square;
+    font-weight: bold;
+    font-style: italic;
+}
+
+header{
+    background-color: #1f271b;
+    background-size: contain;
+}
+
+h2{
+    text-align: justify;
+}
+
+.footer{
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif; color: beige;
+    font-size: 20px;
+}
+
+.footer footer{
+    list-style-type: square;
+    font-weight: bold;
+    font-style: italic;
+}
+
+footer {
+    background-color: #28afb0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.cajatexto{
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif; color: beige;
+    font-size: 20px;
+}
+
+main {
+    background-color: #19647e;
+    background-size: contain;
+}
+
