@@ -1,55 +1,85 @@
-
-
-
-.menu{
-    list-style-type: none;
-    font-family: Arial, Helvetica, sans-serif; color: beige;
-    font-size: 20px;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.menu ul{
+.menu {
+    list-style-type: none;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: right;
+    padding: 20px 15px;
+}
+
+body {
+    font-family: 'Archivo Narrow', sans-serif; color: aliceblue;
+}
+
+.menu ul {
     list-style-type: square;
     font-weight: bold;
     font-style: italic;
 }
 
-header{
-    background-color: #1f271b;
+header {
+    background-color: #1d3557;
     background-size: contain;
 }
 
-h2{
-    text-align: justify;
+h1 {
+    text-align: center;
 }
 
-.footer{
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+h4 {
+    text-align: right;
+}
+
+.footer {
     list-style-type: none;
-    font-family: Arial, Helvetica, sans-serif; color: beige;
-    font-size: 20px;
+    font-size: 21px;
+    padding: 20px 15px;
 }
 
-.footer footer{
+.footer footer {
     list-style-type: square;
     font-weight: bold;
     font-style: italic;
 }
 
 footer {
-    background-color: #28afb0;
+    background-color: #a8dadc;
+    text-align: right;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-.cajatexto{
+.cajatexto {
     list-style-type: none;
-    font-family: Arial, Helvetica, sans-serif; color: beige;
-    font-size: 20px;
+    font-size: 16px;
+    text-align: justify;
+    padding: 30px 20px;
 }
 
 main {
-    background-color: #19647e;
+    background-color: #457b9d;
     background-size: contain;
 }
 
+.Logo {
+    height: 140px;
+    width: 185px;
+    margin-right: 30px;
+    margin-top: 10px;
+    margin-left: 10px;
+    }
