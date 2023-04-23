@@ -20,10 +20,11 @@
 
     <!--Header con menú, nombre de empresa y menú-->
 
-    <header id="arriba">
+    <header id="arriba" class="header">
 
-        <img src="../multimedia/Logo.PNG" alt="Logo" class="Logo"/>
-        <nav>
+        <img src="../multimedia/Logo.PNG" alt="Logo" class="logo-header"/>
+
+        <nav class="nav">
             <ul class="menu">
                 <h1>Firma de Abogados</h1>
                 <li>
@@ -49,36 +50,36 @@
     <!--Formulario de nombres, apellidos, correo electrónico, teléfono, mensaje y terminos y condiciones-->
 
     <main class="cajatexto">
+        
+        <h2 class="titulocontactenos">Contáctenos</h2>
 
-        <h2>Contáctenos</h2>
-
-        <form action="">
-            <fieldset>
+        <form action="" class="form">
+            <fieldset class="formulario">
                 <div>
                     <label for="nombres">Nombres</label>
-                    <input type="text" name="nombres" required>
+                    <input type="text" class="nombres" required>
 
                     <label for="apellidos">Apellidos</label>
-                    <input type="text" name="apellidos">
+                    <input type="text" class="apellidos">
                 </div>
 
                 <div>
                     <label for="correo">Correo electrónico</label>
-                    <input type="email" name="correo" required>
+                    <input type="email" class="correo" required>
 
                     <label for="telefono">Teléfono</label>
-                    <input type="tel" name="telefono">
+                    <input type="tel" class="telefono">
                 </div>
             </fieldset>
 
-            <Fieldset>
+            <Fieldset class="formulariomensaje">
                 <label for="mensaje">Mensaje</label>
                 <input for="mensaje" cols="30" rows="10">
             </Fieldset>
 
-            <Fieldset>
+            <Fieldset class="formulariotyc">
                 <label for="terminos">Acepto términos y condiciones</label>
-                <input type="checkbox" name="terminos" value="terminos" required>
+                <input type="checkbox" class="terminos" value="terminos" required>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt a rerum natus vel aspernatur cum. Dolorem, quasi pariatur nulla est recusandae velit quae! Fuga consequatur reprehenderit eaque veritatis, animi saepe.</p>
                 <input type="submit" value="Enviar">
             </Fieldset>
@@ -89,13 +90,18 @@
     <!--Footer con redes sociales, logo y boton para ir a arriba-->
 
     <footer class="footer">
-        <img src="../multimedia/Logo.PNG" alt="Logo" class="Logo"/>
+        <span class="footer-left">
+            <img src="../multimedia/Logo.PNG" alt="Logo" class="logo-footer"/>
+        </span>
+        <span class="footer-center">
             <h4>Redes Sociales</h4>
+        </span>
+        <span class="footer-right">
             <a href="https://www.facebook.com/">Faceboook</a>
             <a href="https://www.instagram.com/">Instagram</a>
             <a href="https://co.linkedin.com/">Linkedin</a>
-
-        <a href="#arriba">Ir a arriba</a>
+            <a href="#arriba">Ir a arriba</a>
+        </span>
     </footer> 
 
 </body>
