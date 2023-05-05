@@ -83,7 +83,7 @@ body {
         width: 100%;
     }
 
-    /*cajas de texto principales*/
+    /*cajas de texto principal*/
 
 .cajatexto {
     background-color: #457b9d;
@@ -104,6 +104,15 @@ body {
     grid-column: 1/4;
     grid-row: 1/2;
     text-align: center;
+}
+
+.cajatexto .section {
+    text-align: justify;
+    font-size: 16px;
+    padding: 0 20px;
+    grid-area: contenido1;
+    grid-column: 1/2;
+    grid-row: 2/3;
 }
 
 .cajatexto .section1 {
@@ -168,62 +177,39 @@ body {
 
     /*CSS para nuestrahistoria.html*/
 
-    .carruselhistoria .fondo2 {
+    .carrusel .fondo2 {
         height: 370px;
         width: 100%;
     }
 
-.hiscajatexto {
-        background-color: #457b9d;
-        background-size: contain;
-        display: grid;
-        padding: 30px 20px;
-        grid-area: main;
-        grid-template-areas: 
-        "hiscontenido1 hiscontenido2 hiscontenido3";
+    /*CSS para nuestroequipo.html*/
+
+    .carrusel .fondo3 {
+        height: 370px;
+        width: 100%;
     }
 
-.hiscajatexto h2 {
-        grid-column: 1/4;
-        grid-row: 1/2;
+    .cajatexto .section h3 {
         text-align: center;
     }
 
-.hiscajatexto .section .hissection {
-        grid-area: hiscontenido1;
-        grid-column: 1/2;
+    .cajatexto .section1 h3 {
+        text-align: center;
     }
+
+    /*CSS para áreasdepráctica.html*/
+
+    .carrusel .fondo4 {
+        height: 370px;
+        width: 100%;
+    }
+
+    /*CSS para contáctenos.html*/
     
-.hiscajatexto .hissection1 {
-        text-align: justify;
-        font-size: 16px;
-        padding: 0 20px;
-        grid-area: hiscontenido2;
-        grid-column: 2/3;
-        grid-row: 2/3;
+    .carrusel .fondo5 {
+        height: 370px;
+        width: 100%;
     }
-    
-    .hiscajatexto .hissection2 {
-        text-align: justify;
-        font-size: 16px;
-        grid-area: hiscontenido3;
-        padding: 0 20px;
-        grid-column: 3/4;
-        grid-row: 2/3;
-    }
-
-
-    /*CSS para nuestroequipo.html*/
-
-.cajatexto .section .article h3 {
-    text-align: center;
-}
-
-    /*CSS para contactenos.html*/
-.cajatexto .titulocontactenos {
-    text-align: center;
-}
-
 /*Media queries*/
 @media screen and (max-width: 320px) { 
     .contenedortotal {
@@ -231,37 +217,40 @@ body {
         grid-template-columns: 1fr;
         grid-template-rows: 0.5fr 0.3fr 1.5fr 0.5fr;
         grid-template-areas:
-        "resheader"
-        "rescarrusel"
-        "resmain"
-        "resfooter";
+        "header"
+        "carrusel"
+        "main"
+        "footer";
     }
     
     .header {
-        grid-area: resheader;
+        grid-area: header;
         display: grid;
         padding: 10px 5px;
         grid-template-columns: 1fr;
         grid-template-areas: 
-        "reslogo"
-        "restitulo"
-        "resmenu"
+        "logo"
+        "titulo"
+        "menu"
     }
 
     .header .logo-header {
         align-items: center;
         justify-content: center;
-        grid-area: reslogo;
+        width: 100%;
     }
 
-    .tituloprincipal {
-        grid-area: restitulo;
+    .header .logo-header .logo-header-img {
+        width: 50%;
     }
+
+    /*
+    .tituloprincipal {}
+    */
 
     .header .nav .menu {
         font-size: 16px;
         grid-area: menu;
-        flex-direction: rescolumn;
         text-align: center;
         justify-content: center;
         align-items: center;
@@ -271,35 +260,54 @@ body {
     }
 
     .carrusel {
-        grid-area: rescarrusel;
         flex-direction: column;
     }
 
     .carrusel .fondo {
-    align-items: stretch;
+        align-items: stretch;
+        width: 100%;
     }
 
     .cajatexto {
-    grid-area: resmain;
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 10px 5px;
-    grid-template-areas:
-    "rescontenido1"
-    "rescontenido2"
-    "rescontenido3";
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.3fr repeat(3, 1fr);
+        padding: 10px 5px;
+        grid-template-areas:
+            "contenido1"
+            "contenido2"
+            "contenido3";
+    }
+
+    .cajatexto .section {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        width: 100%;
+    }
+
+    .cajatexto .section .mapa {
+        width: 100%;
+    }
+
+    .cajatexto .section {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        padding: 10px 20px;
     }
 
     .cajatexto .section1 {
-        grid-area: rescontenido2;
+        grid-column: 1/2;
+        grid-row: 3/4;
+        padding: 10px 20px;
     }
 
     .cajatexto .section2 {
-        grid-area: rescontenido3;
+        grid-column: 1/2;
+        grid-row: 4/5;
+        padding: 10px 20px;
     }
 
     .footer {
-        grid-area: resfooter;
         grid-template-columns: 1fr;
         padding: 10px 5px;
     }
@@ -309,38 +317,8 @@ body {
         text-align: center;
     }
 
-        /*Responsive nuestrahistoria.html*/
-
-    .hiscajatexto {
-        grid-template-columns: 1fr;
-        grid-area: resmain;
-    }
-
-    .hiscajatexto h2 {
-        grid-area: resmain;
-        text-align: center;
-    }
-
-    .hiscajatexto .hissection {
-        grid-area: rescontenido1;
-        flex-direction: column;
-    }
-
-    .hiscajatexto .hissection1 {
-        grid-area: rescontenido2;
-        flex-direction: column;
-    }
-
-    .hiscajatexto .hissection2 {
-        grid-area: rescontenido3;
-        flex-direction: column;
-    }
 
     /*Elementos que la verdad en responsive no tienen utilidad pero en CSS si es presentable*/
-
-    .cajatexto .section .mapa {
-        display: none;
-    }
 
     .logo-footer{
         display: none;

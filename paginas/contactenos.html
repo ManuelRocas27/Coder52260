@@ -16,17 +16,21 @@
 
 </head>
 
-<body>
+<body class="contenedortotal">
 
     <!--Header con menú, nombre de empresa y menú-->
 
     <header id="arriba" class="header">
 
-        <img src="../multimedia/Logo.PNG" alt="Logo" class="logo-header"/>
+        <div class="logo-header">
+            <img src="../multimedia/Logo.PNG" alt="Logo" class="logo-header-img"/>  
+        </div>
+
+        <h1 class="tituloprincipal">Firma de Abogados</h1>
 
         <nav class="nav">
             <ul class="menu">
-                <h1>Firma de Abogados</h1>
+                
                 <li>
                     <a href="../index.html">Inicio</a>
                 </li>
@@ -44,14 +48,18 @@
                 </li>
             </ul>
         </nav>
-
     </header>
+
+    <!--Espacio reservado para Carrusel-->
+    
+    <div class="carrusel">
+        <img src="../multimedia/fondo5.jpg" alt="fondo5" class="fondo5"/> 
+    </div>
 
     <!--Formulario de nombres, apellidos, correo electrónico, teléfono, mensaje y terminos y condiciones-->
 
     <main class="cajatexto">
-        
-        <h2 class="titulocontactenos">Contáctenos</h2>
+        <h2>Contáctenos</h2>
 
         <form action="" class="form">
             <fieldset class="formulario">
@@ -72,19 +80,18 @@
                 </div>
             </fieldset>
 
-            <Fieldset class="formulariomensaje">
+            <fieldset class="formulariomensaje">
                 <label for="mensaje">Mensaje</label>
                 <input for="mensaje" cols="30" rows="10">
-            </Fieldset>
+            </fieldset>
 
-            <Fieldset class="formulariotyc">
+            <fieldset class="formulariotyc">
                 <label for="terminos">Acepto términos y condiciones</label>
                 <input type="checkbox" class="terminos" value="terminos" required>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt a rerum natus vel aspernatur cum. Dolorem, quasi pariatur nulla est recusandae velit quae! Fuga consequatur reprehenderit eaque veritatis, animi saepe.</p>
                 <input type="submit" value="Enviar">
-            </Fieldset>
+            </fieldset>
         </form>
-
     </main>
 
     <!--Footer con redes sociales, logo y boton para ir a arriba-->
