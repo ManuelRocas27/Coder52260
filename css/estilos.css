@@ -1,3 +1,5 @@
+/*
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -8,11 +10,14 @@ body {
     font-family: 'Archivo Narrow', sans-serif; color: aliceblue;
 }
 
+*/
 /* CSS general de HTML*/
 
     /*Header general*/
 
         /*GRID general*/
+
+/*
 
 .contenedortotal {
     display: grid;
@@ -69,7 +74,11 @@ body {
     margin: 5px 7px;
     }
 
+*/
+
     /*carrusel*/
+
+/*
 
     .carrusel {
         grid-area: carrusel;
@@ -83,7 +92,11 @@ body {
         width: 100%;
     }
 
+*/
+
     /*cajas de texto principal*/
+
+/*
 
 .cajatexto {
     background-color: #457b9d;
@@ -133,7 +146,11 @@ body {
     grid-row: 2/3;
 }
 
+*/
+
     /*Footer general*/
+
+/*
 
 .footer {
     background-color: #a8dadc;
@@ -175,15 +192,18 @@ body {
     font-size: 21px;
 }
 
-    /*CSS para nuestrahistoria.html*/
+*/
 
+    /*CSS para nuestrahistoria.html*/
+/*
     .carrusel .fondo2 {
         height: 370px;
         width: 100%;
     }
+*/
 
     /*CSS para nuestroequipo.html*/
-
+/*
     .carrusel .fondo3 {
         height: 370px;
         width: 100%;
@@ -196,21 +216,26 @@ body {
     .cajatexto .section1 h3 {
         text-align: center;
     }
+*/
 
     /*CSS para áreasdepráctica.html*/
-
+/*
     .carrusel .fondo4 {
         height: 370px;
         width: 100%;
     }
-
+*/
     /*CSS para contáctenos.html*/
-    
+/*
     .carrusel .fondo5 {
         height: 370px;
         width: 100%;
     }
+*/
+
+
 /*Media queries*/
+/*
 @media screen and (max-width: 320px) { 
     .contenedortotal {
         display: grid;
@@ -243,10 +268,6 @@ body {
     .header .logo-header .logo-header-img {
         width: 50%;
     }
-
-    /*
-    .tituloprincipal {}
-    */
 
     .header .nav .menu {
         font-size: 16px;
@@ -294,7 +315,8 @@ body {
         grid-row: 2/3;
         padding: 10px 20px;
     }
-
+*/
+/*
     .cajatexto .section1 {
         grid-column: 1/2;
         grid-row: 3/4;
@@ -317,8 +339,11 @@ body {
         text-align: center;
     }
 
+*/
 
     /*Elementos que la verdad en responsive no tienen utilidad pero en CSS si es presentable*/
+
+/*
 
     .logo-footer{
         display: none;
@@ -328,3 +353,4 @@ body {
         display: none;
     }
 }
+*/

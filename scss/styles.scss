@@ -1,0 +1,292 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Archivo Narrow', sans-serif; color: aliceblue;
+}
+
+/* SASS general de HTML*/
+
+    /*Header general con GRID*/
+
+.contenedortotal {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0.3fr 1.5fr 1.5fr 0.3fr;
+    grid-template-areas:
+    "header header header"
+    "carrusel carrusel carrusel"
+    "main main main"
+    "footer footer footer";
+}
+
+.header {
+        background-color: #1d3557;
+        padding: 20px 15px;
+        background-size: contain;
+        justify-content: space-between;
+        display: flex;
+        grid-area: header;
+        grid-template-areas: 
+        "logo titulo menu";
+        .logo-header {
+                        height: 100px;
+                        width: 145px;
+                        display: flex;
+                        grid-area: logo;
+        }
+        .tituloprincipal {
+                            grid-area: titulo;
+                            text-align: center; 
+        }
+        .nav .menu {
+                    font-size: 32px;
+                    grid-area: menu;
+                    font-weight: bold;
+                    text-align: right;
+                    list-style-type: none;
+                    grid-area: menu;
+                    li {
+                        list-style: none;
+                        display: inline-block;
+                        li a {
+                            text-decoration: none;
+                            color: aliceblue;
+                            font-size: 24px;
+                            margin: 5px 7px;
+                        }
+                    }
+        }
+}
+
+    /*Carrusel*/
+
+.carrusel {
+            grid-area: carrusel;
+            display: flex;
+            justify-content: center;
+            flex-flow: row;
+            .fondo {
+                    height: 370px;
+                width: 100%;
+            }
+}
+
+    /*Caja de texto principal*/
+
+.cajatexto {
+            background-color: #457b9d;
+            background-size: contain;
+            display: grid;
+            padding: 30px 20px;
+            grid-area: main;
+            grid-template-areas: 
+            "contenido1 contenido2 contenido3";
+            .section .mapa {
+                            grid-area: contenido1;
+                            grid-column: 1/2;
+            }
+            h2 {
+                grid-column: 1/4;
+                grid-row: 1/2;
+                text-align: center;
+            }
+            .section {
+                        text-align: justify;
+                        font-size: 16px;
+                        padding: 0 20px;
+                        grid-area: contenido1;
+                        grid-column: 1/2;
+                        grid-row: 2/3;
+            }
+            .section1 {
+                        text-align: justify;
+                        font-size: 16px;
+                        padding: 0 20px;
+                        grid-area: contenido2;
+                        grid-column: 2/3;
+                        grid-row: 2/3;
+            }
+            .section2 {
+                        text-align: justify;
+                        font-size: 16px;
+                        grid-area: contenido3;
+                        padding: 0 20px;
+                        grid-column: 3/4;
+                        grid-row: 2/3;
+            }
+}
+
+/*Footer general*/
+
+.footer {
+            background-color: #a8dadc;
+            grid-area: footer;
+            padding: 20px 15px;
+            background-size: contain;
+            display: flex;
+            justify-content: space-between;
+            grid-template-areas: 
+            "footeriz footercen footerder";
+            .footer-left .logo-footer {
+                                        height: 140px;
+                                        width: 185px;
+                                        margin-right: 30px;
+                                        margin-top: 10px;
+                                        margin-left: 10px;
+                                        grid-area: footeriz;
+            }
+            .footer-center h4 {
+                                font-size: 24px;
+                                font-weight: bold;
+                                color: aliceblue;
+                                grid-area: footercen;
+            }
+            .footer-right {
+                            display: block;
+                            text-align: right;
+                            grid-area: footerder;
+                            a {
+                                font-weight: normal;
+                                color: aliceblue;
+                                text-decoration: none;
+                                font-size: 21px;
+                            }
+            }
+}
+
+/*SASS para nuestrahistoria.html*/
+
+.carrusel .fondo2 {
+    height: 370px;
+    width: 100%;
+}
+
+/*SASS para nuestroequipo.html*/
+
+.carrusel .fondo3 {
+    height: 370px;
+    width: 100%;
+}
+
+.cajatexto {
+            .section h3 {
+                            text-align: center;
+            }
+            .section1 h3 {
+                            text-align: center;
+            }
+}
+
+/*SASS para áreasdepráctica.html*/
+
+.carrusel .fondo4 {
+                    height: 370px;
+                    width: 100%;
+}
+
+/*SASS para contáctenos.html*/
+
+.carrusel .fondo5 {
+                    height: 370px;
+                    width: 100%;
+}
+
+
+/*Media queries*/
+@media screen and (max-width: 320px) { 
+    .contenedortotal {
+                        display: grid;
+                        grid-template-columns: 1fr;
+                        grid-template-rows: 0.5fr 0.3fr 1.5fr 0.5fr;
+                        grid-template-areas:
+                        "header"
+                        "carrusel"
+                        "main"
+                        "footer";
+    }
+    .header {
+                grid-area: header;
+                display: grid;
+                padding: 10px 5px;
+                grid-template-columns: 1fr;
+                grid-template-areas: 
+                "logo"
+                "titulo"
+                "menu";
+        .logo {
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                .logo-header-img {
+                                    width: 50%;
+                }
+        }
+        .nav .menu {
+                    font-size: 16px;
+                    grid-area: menu;
+                    text-align: center;
+                    justify-content: center;
+                    align-items: center;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    display: center;
+        }
+    }
+    .carrusel {
+                flex-direction: column;
+                .fondo {
+                        align-items: stretch;
+                        width: 100%;
+                }
+    }
+    .cajatexto {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 0.3fr repeat(3, 1fr);
+                padding: 10px 5px;
+                grid-template-areas:
+                "contenido1"
+                "contenido2"
+                "contenido3";
+                .section {
+                            grid-column: 1/2;
+                            grid-row: 2/3;
+                            width: 100%;
+                            padding: 10px 20px;
+                            .mapa {
+                                    width: 100%;
+                            }
+                }
+                .section1 {
+                            grid-column: 1/2;
+                            grid-row: 3/4;
+                            padding: 10px 20px;
+                }
+                .section2 {
+                            grid-column: 1/2;
+                            grid-row: 4/5;
+                            padding: 10px 20px;
+                }
+                .footer {
+                            grid-template-columns: 1fr;
+                            padding: 10px 5px;
+                            .footer-right {
+                                flex-direction: column;
+                                text-align: center;
+                            }
+                }
+    }
+    
+    /*Elementos que en pantalla pequeña no son presentables pero en laptop si*/
+
+    .logo-footer{
+                    display: none;
+    }
+    .footer-center {
+                    display: none;
+    }
+}
