@@ -30,7 +30,6 @@
 
         <nav class="nav">
             <ul class="menu">
-                
                 <li>
                     <a href="../index.html">Inicio</a>
                 </li>
@@ -62,35 +61,34 @@
         <h2>Contáctenos</h2>
 
         <form action="" class="form">
-            <fieldset class="formulario">
-                <div>
-                    <label for="nombres">Nombres</label>
-                    <input type="text" class="nombres" required>
+            <div class="input">
+                <label class="input__label" for="nombres">Nombres</label>
+                <input class="input__field" type="text" required>
+            </div>
+            <div class="input">
+                <label class="input__label" for="apellidos">Apellidos</label>
+                <input class="input__field" type="text" class="apellidos">
+            </div>
+            <div class="input">
+                <label class="input__label" for="correo">Correo electrónico</label>
+                <input class="input__field" type="email" class="correo" required>
+            </div>
+            <div class="input">
+                <label class="input__label" for="telefono">Teléfono</label>
+                <input class="input__field" type="tel" class="telefono">
+            </div>
 
-                    <label for="apellidos">Apellidos</label>
-                    <input type="text" class="apellidos">
-                </div>
+            <div class="input">
+                <label class="input__label" for="mensaje">Mensaje</label>
+                <input class="input__field" for="mensaje" cols="30" rows="10">
+            </div>
 
-                <div>
-                    <label for="correo">Correo electrónico</label>
-                    <input type="email" class="correo" required>
-
-                    <label for="telefono">Teléfono</label>
-                    <input type="tel" class="telefono">
-                </div>
-            </fieldset>
-
-            <fieldset class="formulariomensaje">
-                <label for="mensaje">Mensaje</label>
-                <input for="mensaje" cols="30" rows="10">
-            </fieldset>
-
-            <fieldset class="formulariotyc">
-                <label for="terminos">Acepto términos y condiciones</label>
-                <input type="checkbox" class="terminos" value="terminos" required>
+            <div class="input">
+                <label class="input__label" for="terminos">Acepto términos y condiciones</label>
+                <input class="input__field" type="checkbox"  value="terminos" required>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt a rerum natus vel aspernatur cum. Dolorem, quasi pariatur nulla est recusandae velit quae! Fuga consequatur reprehenderit eaque veritatis, animi saepe.</p>
-                <input type="submit" value="Enviar">
-            </fieldset>
+            </div>
+            <input type="submit" value="Enviar">
         </form>
     </main>
 

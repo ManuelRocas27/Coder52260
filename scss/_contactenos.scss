@@ -1,0 +1,70 @@
+/*SASS para contáctenos.html*/
+
+
+.contenedortotal {
+    .carrusel {
+        .fondo5 {
+            height: max-content;
+            width: 100%;
+        }
+    }
+
+    .form {
+        align-items: center;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        width: 100%;
+
+        .input {
+            align-items: center;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            width: 25%;
+
+            &__label {
+                width: 25%;
+            }
+
+            &__field {
+                width: 70%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 320px) { 
+    .contenedortotal { 
+        .form {
+            grid-column: 1/2;
+            flex-flow: column nowrap;
+            justify-content: space-between;
+
+            .input {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-flow: column wrap;
+                text-align: justify;
+                padding: 5px 0;
+                width: 80%;
+
+                &__label {
+                    align-items: center;
+                }
+
+                &__field {
+                    align-items: center;
+                    width: 60%;
+                }
+
+                p {
+                    justify-content: space-between;
+                    width: 100%;
+                    margin-top: 12px;
+                }
+            }    
+        }
+    }
+}
