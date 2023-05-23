@@ -42,6 +42,7 @@ body {
 
             .logo-header-img {
                 width: 100%;
+                border-radius: 10% 30% 50% 70%;
             }
         }
 
@@ -137,6 +138,7 @@ body {
                 align-items: center;
                 justify-content: center;
                 flex-flow: row nowrap;
+                text-align: justify;
                 width: 30%;
 
                 &__map {
@@ -165,6 +167,7 @@ body {
             .logo-footer {
                 height: 100px;
                 width: 145px;
+                border-radius: 10% 30% 50% 70%;
                 margin-right: 30px;
                 margin-top: 10px;
                 margin-left: 10px;
@@ -175,7 +178,7 @@ body {
             h4 {
                 font-size: 24px;
                 font-weight: bold;
-                color: $colorletra;
+                color: $colorletrasecundario;
                 grid-area: footercen;
             }
         } 
@@ -186,7 +189,8 @@ body {
     
                 a {
                     font-weight: normal;
-                    color: $colorletra;
+                    color: $colorletrasecundario;
+                    padding: 0px 10px;
                     text-decoration: none;
                     font-size: 21px;
                 }

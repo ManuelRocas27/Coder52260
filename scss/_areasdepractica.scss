@@ -1,7 +1,5 @@
 /*SASS para áreasdepráctica.html*/ /*Por las caracteristicas del Html se especifica diseño de áreasdepráctica.html*/
 
-/* SASS de áreasdepráctica.html*/
-
     /*Header áreasdepráctica.html con GRID*/
 
 .contenedortotal {
@@ -36,6 +34,7 @@
                 width: 30%;
 
                 &__img {
+                    border-radius: 30px;
                     padding: 10px 0px;
                 }
 

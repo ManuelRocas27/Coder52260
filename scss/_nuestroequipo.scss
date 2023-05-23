@@ -8,6 +8,10 @@
             justify-content: space-between;
             flex-flow: column wrap;
             width: 45%;
+
+            &__img {
+                border-radius: 50% 20% / 10% 40%;
+            }
         }
     }
 }

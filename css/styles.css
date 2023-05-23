@@ -41,6 +41,7 @@ body {
 }
 .contenedortotal .header .logo-header .logo-header-img {
   width: 100%;
+  border-radius: 10% 30% 50% 70%;
 }
 .contenedortotal .header .tituloprincipal {
   grid-area: titulo;
@@ -118,6 +119,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-flow: row nowrap;
+  text-align: justify;
   width: 30%;
 }
 .contenedortotal .cajatexto .content .section__map {
@@ -135,6 +137,7 @@ body {
 .contenedortotal .footer .footer-left .logo-footer {
   height: 100px;
   width: 145px;
+  border-radius: 10% 30% 50% 70%;
   margin-right: 30px;
   margin-top: 10px;
   margin-left: 10px;
@@ -143,7 +146,7 @@ body {
 .contenedortotal .footer .footer-center h4 {
   font-size: 24px;
   font-weight: bold;
-  color: aliceblue;
+  color: #457b9d;
   grid-area: footercen;
 }
 .contenedortotal .footer .footer-right {
@@ -153,7 +156,8 @@ body {
 }
 .contenedortotal .footer .footer-right a {
   font-weight: normal;
-  color: aliceblue;
+  color: #457b9d;
+  padding: 0px 10px;
   text-decoration: none;
   font-size: 21px;
 }
@@ -265,6 +269,9 @@ body {
   flex-flow: column wrap;
   width: 45%;
 }
+.cajatexto .content .abogado-card__img {
+  border-radius: 50% 20%/10% 40%;
+}
 
 @media screen and (max-width: 320px) {
   .contenedortotal .cajatexto {
@@ -288,7 +295,6 @@ body {
   }
 }
 /*SASS para áreasdepráctica.html*/ /*Por las caracteristicas del Html se especifica diseño de áreasdepráctica.html*/
-/* SASS de áreasdepráctica.html*/
 /*Header áreasdepráctica.html con GRID*/
 .contenedortotal {
   /*Footer general con GRID*/
@@ -323,6 +329,7 @@ body {
   width: 30%;
 }
 .contenedortotal .cajatextoareas .content .practica-card__img {
+  border-radius: 30px;
   padding: 10px 0px;
 }
 .contenedortotal .cajatextoareas .content .practica-card__p {
@@ -364,6 +371,7 @@ body {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
+  text-align: justify;
   margin: 5px 0;
   width: 40%;
 }
