@@ -1,0 +1,41 @@
+/*SASS para nuestroequipo.html*/
+
+.cajatexto {
+    .content {
+        .abogado-card {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-flow: column wrap;
+            width: 45%;
+        }
+    }
+}
+
+@media screen and (max-width: 320px) { 
+    .contenedortotal { 
+        .cajatexto {
+            grid-column: 1/2;
+            flex-flow: column nowrap;
+            justify-content: space-between;
+
+            .content{
+                .abogado-card{
+                    display: flex;
+                    flex-flow: column wrap;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: justify;
+                    padding: 15px 0;
+                    width: 80%;
+                }
+                
+                &__p {
+                    justify-content: space-between;
+                    width: 100%;
+                    margin-top: 12px;
+                }
+            }
+        }
+    }
+}
