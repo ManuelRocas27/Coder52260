@@ -15,19 +15,20 @@ body {
 .contenedortotal {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 0.3fr 0.8fr 0.6fr 0.3fr;
+    grid-template-rows: 0.3fr 0.7fr 0.6fr 0.3fr;
     grid-template-areas:
         "header header header"
         "carrusel carrusel carrusel"
         "main main main"
         "footer footer footer";
+    height: 100vh;
 
     /*Header*/
 
     .header {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
         flex-flow: row nowrap;
         grid-column: 1/4;
         background: $colorprincipal;
@@ -35,22 +36,26 @@ body {
         width: 100%;
 
         .logo-header {
-            width: 30%;
+            width: 12%;
             display: flex;
             grid-area: logo;
 
             .logo-header-img {
-                width: 50%;
+                width: 100%;
             }
         }
 
         .tituloprincipal {
             grid-area: titulo;
-            width: 20%;
+            font-size: 38px;
+            letter-spacing: 1px;
+            text-align: center;
+            width: 25%;
         }
 
         .nav {
             width: 50%;
+
             .menu {
                 display: flex;
                 align-items: center;
@@ -59,19 +64,19 @@ body {
                 width: 100%;
 
                 li {
+                    text-align: center;
                     list-style: none;
                     
                     a {
                         font-weight: bold;
-                        font-size: 32px;
                         text-decoration: none;
                         color: $colorletra;
-                        font-size: 24px;
-                        margin: 5px 7px;
+                        font-size: 22px;
+                        letter-spacing: 1px;
                         
                         &:hover {
                             color: rgb(10, 176, 218);
-                            font-size: 32px;
+                            font-size: 24px;
                         }
                     }
                 }
@@ -81,23 +86,33 @@ body {
 
     /*Carrusel*/
 
-    .carrusel {
+    .galeria {
         grid-area: carrusel;
         display: flex;
-        justify-content: center;
-        flex-flow: row;
-        height: 65vh;
         width: 100%;
+        height: 480px;
+        
+        img {
+            flex-grow: 1;
+            width: 0px;
+            object-fit: cover;
+            opacity: .8;
+            transition: ease .5s;
 
-        .fondo {
-            width: 100%;
+            &:hover {
+                width: 300px;
+                opacity: 1;
+                filter: contrast(120%);
+            }
         }
     }
+
 
     /*Caja de texto principal con GRID*/
 
     .cajatexto {
         grid-column: 1/4;
+        grid-area: main;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -115,10 +130,18 @@ body {
             justify-content: space-around;
             flex-flow: row wrap;
             padding: 35px 0;
-            width: 90%;
+            width: 100%;
 
             .section {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-flow: row nowrap;
                 width: 30%;
+
+                &__map {
+                    width: 95%;
+                }
             }
         }
 
@@ -173,6 +196,30 @@ body {
 
 /*Media queries*/
 
+@media screen and (max-width: 768px) {
+    .contenedortotal {
+
+        .header {
+            .tituloprincipal {
+                font-size: 16px;
+                letter-spacing: 1px;
+            }
+
+            .nav {
+                width: 70%;
+                .menu {
+                    li {
+                        a {
+                            font-size: 14px;
+                            letter-spacing: 1px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 320px) { 
     .contenedortotal {
         grid-template-columns: 1fr;
@@ -182,6 +229,7 @@ body {
             "carrusel"
             "main"
             "footer";
+        height: 100vh;
 
         .header {
             grid-column: 1/2;
@@ -192,7 +240,7 @@ body {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                width: 100%;
+                width: 55%;
             }
 
             .tituloprincipal {
@@ -212,9 +260,15 @@ body {
             }
         }
 
-        .carrusel {
+        .galeria {
             height: 45vh;
             width: 100%;
+
+            img {
+                &:hover {
+                    width: 200px;
+                }
+            }
         }
 
         .cajatexto {
