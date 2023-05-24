@@ -20,8 +20,8 @@ body {
   grid-template-areas: "header header header" "carrusel carrusel carrusel" "main main main" "footer footer footer";
   height: 100vh;
   /*Header*/
-  /*Carrusel*/
-  /*Caja de texto principal con GRID*/
+  /*Animación corporativa*/
+  /*Caja de texto principal*/
   /*Footer general con GRID*/
 }
 .contenedortotal .header {
@@ -162,8 +162,8 @@ body {
   font-size: 21px;
 }
 
-/*Media queries*/
-@media screen and (max-width: 768px) {
+/* Responsive general para html*/
+@media screen and (min-width: 426px) and (max-width: 768px) {
   .contenedortotal .header .tituloprincipal {
     font-size: 16px;
     letter-spacing: 1px;
@@ -176,7 +176,7 @@ body {
     letter-spacing: 1px;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 320px) and (max-width: 425px) {
   .contenedortotal {
     grid-template-columns: 1fr;
     grid-template-rows: 0.3fr 0fr 1.5fr 0.5fr;
@@ -252,20 +252,12 @@ body {
     display: none;
   }
 }
-/*SASS para nuestrahistoria.html*/
-/*
-.carrusel {
-    .fondo2 {
-        height: max-content;
-        width: 100%;
-    }
-}
-*/
-/*SASS para nuestroequipo.html*/
+/*SASS para nuestrahistoria.html*/ /*SASS para nuestroequipo.html*/
 .cajatexto .content .abogado-card {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  text-align: justify;
   flex-flow: column wrap;
   width: 45%;
 }
@@ -273,7 +265,8 @@ body {
   border-radius: 50% 20%/10% 40%;
 }
 
-@media screen and (max-width: 320px) {
+/* Responsive nuestroequipo.html*/
+@media screen and (min-width: 320px) and (max-width: 425px) {
   .contenedortotal .cajatexto {
     grid-column: 1/2;
     flex-flow: column nowrap;
@@ -284,7 +277,6 @@ body {
     flex-flow: column wrap;
     align-items: center;
     justify-content: center;
-    text-align: justify;
     padding: 15px 0;
     width: 80%;
   }
@@ -296,9 +288,6 @@ body {
 }
 /*SASS para áreasdepráctica.html*/ /*Por las caracteristicas del Html se especifica diseño de áreasdepráctica.html*/
 /*Header áreasdepráctica.html con GRID*/
-.contenedortotal {
-  /*Footer general con GRID*/
-}
 .contenedortotal .cajatextoareas {
   grid-column: 1/4;
   grid-area: main;
@@ -336,8 +325,8 @@ body {
   text-align: justify;
 }
 
-/*Media queries*/
-@media screen and (max-width: 768px) {
+/* Responsive areasdepractica.html*/
+@media screen and (min-width: 426px) and (max-width: 768px) {
   .contenedortotal .cajatextoareas .content {
     flex-flow: row wrap;
   }
@@ -345,12 +334,18 @@ body {
     width: 45%;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 320px) and (max-width: 425px) {
   .contenedortotal .cajatextoareas .content {
     flex-flow: column nowrap;
   }
   .contenedortotal .cajatextoareas .content .practica-card {
-    width: 95%;
+    width: 80%;
+  }
+  .contenedortotal .cajatextoareas .content .practica-card__img {
+    width: 60%;
+  }
+  .contenedortotal .cajatextoareas .content .practica-card__p {
+    width: 60%;
   }
 }
 /*SASS para contáctenos.html*/
@@ -382,7 +377,8 @@ body {
   width: 70%;
 }
 
-@media screen and (max-width: 320px) {
+/* Responsive contactenos.html*/
+@media screen and (min-width: 320px) and (max-width: 425px) {
   .contenedortotal .form {
     grid-column: 1/2;
     flex-flow: column nowrap;

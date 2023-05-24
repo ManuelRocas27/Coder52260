@@ -37,7 +37,11 @@
     }
 }
 
-@media screen and (max-width: 320px) { 
+/* Responsive contactenos.html*/
+
+
+
+@media screen and (min-width: 320px) and (max-width: 425px) { 
     .contenedortotal { 
         .form {
             grid-column: 1/2;
